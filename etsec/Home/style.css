@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar-main {
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 0.2em 3em;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.nav-logo {
+  width: 5em;
+  height: 2em;
+}
+
+.menu-btn {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.navbar > button {
+  background-color: white;
+  border-radius: 0.5em;
+  border: none;
+}
+.navbar > button:hover {
+  transition: all 0.4s;
+  transform: scale(1.1);
+
+}
+
+.navbar-main:hover .slidder {
+	left: 0;
+  }
+
+.slidder{
+	position: absolute;
+	background: white;
+	overflow: hidden;
+	top: 3.7em;
+	left: -20em; 
+	width: 20em;
+	height: 15em;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+	border-radius: 0em 0em 0.3em;
+	border-top: 0px;
+	transition: left 0.5s ease;
+	
+
+}
+
+.slidder>ol{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+	padding: 1.5em 0em;
+	margin: 0;
+	align-items: center;
+	
+}
+.slidder>ol>li{
+	font-weight: 600;
+	font-size: 1.2em;
+	cursor: pointer;
+	transition: color 0.3s ease;
+}
+
+.slidder>ol>li:hover{
+	color: rgb(40, 191, 191);
+}
