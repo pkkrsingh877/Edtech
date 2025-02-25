@@ -2,6 +2,8 @@
 
 ETSEC Incorporate is a premier cybersecurity firm dedicated to providing robust and innovative solutions to protect your digital assets and ensure the integrity of your IT infrastructure. This project includes a website with various sections such as Home, About, Courses, and Contact.
 
+This site is for providing people access to form through which they can register for training courses.
+
 ## Project Structure
 
 ### Home Page
