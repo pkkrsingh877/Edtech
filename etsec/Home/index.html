@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ETSEC Incorporate</title>
     <link rel="stylesheet" href="./style.css" />
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,17 +15,29 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <div class="container">
-		<!-- nav bar section -->
+    <div class="">
+      <!-- nav bar section -->
       <div class="navbar-main">
         <nav class="navbar">
           <button data-toggle="slidder">
             <i class="ri-menu-2-fill menu-btn"></i>
           </button>
-          <div>
-            <img class="nav-logo" src="/media//images/converted.png" alt="" />
+          <div class="logo-container">
+            <img
+              class="nav-logo"
+              src="/media/images/converted.png"
+              alt="brand"
+            />
           </div>
         </nav>
 
@@ -40,63 +51,597 @@
         </div>
       </div>
 
+      <!-- hero section -->
+      <section class="hero-section">
+        <div class="row">
+          <div class="hero-left col-sm-5">
+            <img src="/media/images/branding.png" alt="" />
+          </div>
+          <div class="hero-right col-sm-7">
+            <div
+              id="carouselExampleAutoplaying"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1000">
+                  <img
+                    src="/media/images/2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block caption">
+                    <h5>Blockchain Fundamental</h5>
+                    <p>
+                      "Blockchain enhances security by using cryptographic
+                      techniques, making it difficult for unauthorized parties
+                      to alter or tamper with data."
+                    </p>
+                  </div>
+                </div>
 
-	  <!-- hero section -->
-	  <section class="hero-section container-fluid-xxl" >
-		<div class="row">
-			<div class="hero-left col-sm-4">
-				<img src="/media/images/branding.png" alt="">
-	
-			</div>
-			<div class="hero-right col-sm-8">
-				<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-					<div class="carousel-inner">
-					  <div class="carousel-item active" data-bs-interval="10000">
-						<img src="/media/images/2.jpg" class="d-block w-100" alt="...">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>First slide label</h5>
-							<p>Some representative placeholder content for the first slide.</p>
-						  </div>
-					  </div>
-					  <div class="carousel-item" data-bs-interval="10000">
-						<img src="/media/images/bc1.avif" class="d-block w-100" alt="...">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>First slide label</h5>
-							<p>Some representative placeholder content for the first slide.</p>
-						  </div>
-					  </div>
-					  <div class="carousel-item" data-bs-interval="10000">
-						<img src="/media/images/iot.jpg" class="d-block w-100" alt="...">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>First slide label</h5>
-							<p>Some representative placeholder content for the first slide.</p>
-						  </div>
-					  </div>
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img
+                    src="/media/images/2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block caption">
+                    <h5>Cybersecurity Essentials with hands on Learning</h5>
+                    <p>
+                      "Understanding security fundamentals, such as encryption
+                      and authentication, is crucial for protecting sensitive
+                      data in digital environments."
+                    </p>
+                  </div>
+                </div>
 
-	
-					</div>
-					<button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-					  <span class="carousel-control-prev-icon btn-left" aria-hidden="true"></span>
-					  <span class="visually-hidden ">Previous</span>
-					</button>
-					<button class="carousel-control-next " type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-					  <span class="carousel-control-next-icon btn-right" aria-hidden="true"></span>
-					  <span class="visually-hidden">Next</span>
-					</button>
-				  </div>
-			</div>
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <img
+                    src="/media/images/2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block caption">
+                    <h5>IoT using Raspberry pi & Arduino UNO</h5>
+                    <p>
+                      "The Internet of Things (IoT) is about connecting devices
+                      to the internet so they can share data and work together.
+                      Two popular tools for building IoT projects are Raspberry
+                      Pi and Arduino UNO."
+                    </p>
+                  </div>
+                </div>
 
-		</div>
+                <div class="carousel-item" data-bs-interval="4000">
+                  <img
+                    src="/media/images/bc1.avif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block caption">
+                    <h5>Network and Web Pentesting From basic to Advanced</h5>
+                    <p>
+                      "Web application pentesting focuses on identifying
+                      vulnerabilities such as SQL injection, XSS, and CSRF to
+                      secure applications."
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img
+                    src="/media/images/iot.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block caption">
+                    <h5>
+                      Master the skills to secure digital world : Complete
+                      Cybersecurity Fundamentals
+                    </h5>
+                    <p>
+                      "Firewalls and intrusion detection systems are essential
+                      tools for monitoring and controlling network traffic to
+                      prevent unauthorized access."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon btn-left"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon btn-right"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		
-	  </section>
+
+      <!-- /card section -->
+      <section class="cards_section">
+        <div class="card ">
+          <p><i class="fa-solid fa-graduation-cap icon"></i></p>
+          <h3>Skilled Instructors</h3>
+          <p class="cards_content">
+            Effective instructors continuously update their knowledge,
+            integrating current industry trends into their curriculum.
+          </p>
+        </div>
+        <div class="card">
+          <p><i class="fa-solid fa-globe icon"></i></p>
+          <h3>Online Classes</h3>
+          <p class="cards_content">
+            Online classes provide access to diverse resources, enabling
+            students to explore various subjects beyond classroom limitations.
+          </p>
+        </div>
+        <div class="card ">
+          <p><i class="fa-solid fa-house icon"></i></p>
+          <h3>Home Projects</h3>
+          <p class="cards_content">
+            Collaborative home projects strengthen family bonds, providing
+            opportunities for teamwork in creating a comfortable environment.
+          </p>
+        </div>
+        <div class="card ">
+          <p><i class="fa-solid fa-book-open-reader icon"></i></p>
+          <h3>Book Library</h3>
+          <p class="cards_content">
+            A well-organized book library enhances research efficiency, enabling
+            users to locate information quickly and effectively.
+          </p>
+        </div>
+      </section>
+
+      <!-- // About Section -->
+
+      <section class="about-container">
+        <div class="about_section">
+          <div class="about_img">
+            <img src="/media/images/about.jpg" alt="" />
+          </div>
+          <div class="about_content">
+            <div class="about-title">
+              <span>
+
+                ABOUT US
+              </span>
+              <div></div>
+              
+            </div>
+            <h1>Welcome to ETSEC Incorporate</h1>
+            <p>
+              ETSEC Inc. is a premier cybersecurity firm dedicated to providing
+              robust and innovative solutions to protect your digital assets and
+              ensure the integrity of your IT infrastructure. We specialize in
+              delivering comprehensive security services that address the
+              multifaceted challenges of today’s digital environment.
+            </p>
+
+            <p>
+              Our core offerings include a state-of-the-art Security Operations
+              Center (SOC) that operates 24/7 to monitor, detect, and respond to
+              potential threats in real-time. Our advanced SOC combines
+              cutting-edge technology with expert analysis to ensure your
+              network remains secure against evolving cyber threats.
+            </p>
+            <div class="about_foot">
+              <div>
+                <p>
+                  <span class="arrow"
+                    ><i class="fa-solid fa-arrow-right"></i></span
+                  >Skilled Instructors
+                </p>
+              </div>
+              <div>
+                <p>
+                  <span class="arrow"
+                    ><i class="fa-solid fa-arrow-right"></i></span
+                  >Blanded Mode Classes
+                </p>
+              </div>
+            </div>
+            <button class="about-btn">Read More</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- course Category start********* -->
+
+      <div class="container-xxl py-5 category">
+        <div class="container">
+          <div class="text-center">
+            
+            <div class="course-title">
+              <div class="line-container align-right">
+                <div class="beforeshortline"></div>
+                <div class="longline"></div>
+              </div>
+            
+              <span>Courses</span>
+            
+              <div class="line-container align-left">
+                <div class="shortline"></div>
+                <div class="longline"></div>
+              </div>
+            </div>
+            
+
+            <h1 class="mb-5">Courses Categories</h1>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-lg-7 col-md-6">
+              <div class="row g-3">
+                <div class="col-lg-12 col-md-12 categorygsap">
+                  <a class="position-relative d-block overflow-hidden" href="">
+                    <img class="img-fluid" src="/media/images/fs.png" alt="" />
+                    <div
+                      class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                      style="margin: 1px"
+                    >
+                      <h5 class="m-0">Full Stack Development</h5>
+                      <!--<small class="text-primary">49 Courses</small>-->
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-6 col-md-12 categorygsap">
+                  <a class="position-relative d-block overflow-hidden" href="">
+                    <img
+                      class="img-fluid"
+                      src="/media/images/iot (1).jpg"
+                      alt=""
+                    />
+                    <div
+                      class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                      style="margin: 1px"
+                    >
+                      <h5 class="m-0">IoT</h5>
+                      <!--<small class="text-primary">49 Courses</small>-->
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-6 col-md-12 categorygsap">
+                  <a class="position-relative d-block overflow-hidden" href="">
+                    <img class="img-fluid" src="/media/images/CS.jpg" alt="" />
+                    <div
+                      class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                      style="margin: 1px"
+                    >
+                      <h5 class="m-0">Cybersecurity</h5>
+                      <!--<small class="text-primary">49 Courses</small>-->
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6 categorygsapcs">
+              <a
+                class="position-relative d-block h-100 overflow-hidden"
+                href=""
+              >
+                <img
+                  class="img-fluid position-absolute w-100 h-100"
+                  src="/media/images/bc.jpg"
+                  alt=""
+                  style="object-fit: cover"
+                />
+                <div
+                  class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                  style="margin: 1px"
+                >
+                  <h5 class="m-0">Blockchain</h5>
+                  <!--<small class="text-primary">49 Courses</small>-->
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- couses list -->
+
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="text-center">
+
+
+            <div class="course-title">
+              <div class="line-container align-right">
+                <div class="beforeshortline"></div>
+                <div class="longline"></div>
+              </div>
+            
+              <span>Courses</span>
+            
+              <div class="line-container align-left">
+                <div class="shortline"></div>
+                <div class="longline"></div>
+              </div>
+            </div>
+            
+          
+            <h1 class="mb-5">Popular Courses</h1>
+          </div>
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6  coursegsap1">
+              <div class="course-item bg-light ">
+                <div class="position-relative overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="/media/images/course-1.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4 course-btn"
+                  >
+                    <a
+                      href="#"
+                      class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                      style="border-radius: 30px 0 0 30px"
+                      >Read More</a
+                    >
+                    <a
+                      href="#"
+                      class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                      style="border-radius: 0 30px 30px 0"
+                      >Join Now</a
+                    >
+                  </div>
+                </div>
+                <div class="text-center p-4 pb-0">
+                  <h3 class="mb-0">xxxxx</h3>
+                  <div class="mb-3">
+                    <small class="ri-star-fill"></small>
+                    <small class="ri-star-fill"></small>
+                    <small class="ri-star-fill"></small>
+                    <small class="ri-star-fill"></small>
+                    <small class="ri-star-fill"></small>
+                    <small>(123)</small>
+                  </div>
+                  <h5 class="mb-4">Blockchain Fundamental</h5>
+                </div>
+                <div class="d-flex border-top">
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="ri-user-2-fill"></i>xxxxx</small
+                  >
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="ri-time-fill"></i>xxxxx</small
+                  >
+                  <small class="flex-fill text-center py-2"
+                    ><i class="ri-user-fill"></i>xxxxx</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 coursegsap">
+              <div class="course-item bg-light">
+                <div class="position-relative overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="/media/images/course-2.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4 course-btn"
+                  >
+                    <a
+                      href="#"
+                      class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                      style="border-radius: 30px 0 0 30px"
+                      >Read More</a
+                    >
+                    <a
+                      href="#"
+                      class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                      style="border-radius: 0 30px 30px 0"
+                      >Join Now</a
+                    >
+                  </div>
+                </div>
+                <div class="text-center p-4 pb-0">
+                  <h3 class="mb-0">xxxxx</h3>
+                  <div class="mb-3">
+                    <small class="ri-star-fill"></small>
+                    <small class="ri-star-fill"></small>
+                    <small class="ri-star-fill"></small>
+                    <small class="ri-star-fill"></small>
+                    <small class="ri-star-fill"></small>
+                    <small>(123)</small>
+                  </div>
+                  <h5 class="mb-4">Cybersecurity</h5>
+                </div>
+                <div class="d-flex border-top">
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="ri-user-2-fill"></i>xxxxx</small
+                  >
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="ri-time-fill"></i>xxxxx</small
+                  >
+                  <small class="flex-fill text-center py-2"
+                    ><i class="ri-user-fill"></i>xxxxx</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 coursegsap3">
+              <div class="course-item bg-light">
+                <div class="position-relative overflow-hidden">
+                  <img
+                    class="img-fluid"
+                    src="/media/images/course-3.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4 course-btn"
+                  >
+                    <a
+                      href="#"
+                      class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                      style="border-radius: 30px 0 0 30px"
+                      >Read More</a
+                    >
+                    <a
+                      href="#"
+                      class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                      style="border-radius: 0 30px 30px 0"
+                      >Join Now</a
+                    >
+                  </div>
+                </div>
+                <div class="text-center p-4 pb-0">
+                  <h3 class="mb-0">xxxxx</h3>
+                  <div class="mb-3">
+                    <small class="ri-star-fill"></small>
+                    <small class="ri-star-fill"></small>
+                    <small class="ri-star-fill"></small>
+                    <small class="ri-star-fill"></small>
+                    <small class="ri-star-fill"></small>
+                    <small>(123)</small>
+                  </div>
+                  <h5 class="mb-4">Full Satck Development</h5>
+                </div>
+                <div class="d-flex border-top">
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="ri-user-2-fill"></i>xxxxx</small
+                  >
+                  <small class="flex-fill text-center border-end py-2"
+                    ><i class="ri-time-fill"></i>xxxxx</small
+                  >
+                  <small class="flex-fill text-center py-2"
+                    ><i class="ri-user-fill"></i>xxxxx</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer section -->
+      <footer class="">
+        <!-- quick link -->
+        <div class="row footer-main">
+          <div class="col-md-4 quick-section">
+            <h2>Quick Links</h2>
+            <ul>
+              <li>
+                <i class="ri-arrow-right-s-line"></i>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <i class="ri-arrow-right-s-line"></i>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <i class="ri-arrow-right-s-line"></i>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <i class="ri-arrow-right-s-line"></i>
+                <a href="#">Terms & Condition</a>
+              </li>
+              <li>
+                <i class="ri-arrow-right-s-line"></i>
+                <a href="#">FAQs & Help</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 contact-section">
+            <h2>Contact</h2>
+            <div>
+              <i class="ri-map-pin-2-fill"></i>
+              <p>
+                Srinivasa homes apt flat no 401, Bandari Layout Road no 4a,
+                Nizampet, Hyderabad, 500090
+              </p>
+            </div>
+            <div>
+              <i class="ri-phone-fill"></i>
+              <p>+91 7093107748</p>
+            </div>
+            <div>
+              <i class="ri-mail-fill"></i>
+              <p>etsecinc@gmail.com</p>
+            </div>
+
+            <div class="footer-icons">
+              <div>
+                <i class="ri-twitter-fill"></i>
+              </div>
+              <div>
+                <i class="ri-facebook-circle-fill"></i>
+              </div>
+              <div>
+                <i class="ri-youtube-fill"></i>
+              </div>
+              <div>
+                <i class="ri-linkedin-box-fill"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 gallery-section">
+            <h3>Gallery</h3>
+            <div class="gallery-grid">
+              <img class="item-one" src="/media/images/course-1.jpg" alt="" />
+              <img class="item-two" src="/media/images/course-2.jpg" alt="" />
+              <img class="item-three" src="/media/images/course-3.jpg" alt="" />
+              <img class="item-four" src="/media/images/course-3.jpg" alt="" />
+              <img class="item-five" src="/media/images/course-2.jpg" alt="" />
+              <img class="item-six" src="/media/images/course-1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="copy-right">
+          <p>
+            © <span> ETSEC Incorporate </span>
+            , All Right Reserved. Designed By
+            <span> ETSEC </span>
+          </p>
+          <span> Home Cookies Help FQAs </span>
+        </div>
+      </footer>
     </div>
 
-    <script src="./index.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
