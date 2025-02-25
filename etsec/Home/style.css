@@ -159,6 +159,12 @@ body {
   border-radius: 20px;
   font-weight: bold;
 }
+
+/* Contact */
+
+.contact-us{
+  margin-top: 2rem;
+}
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   .hero-section {
