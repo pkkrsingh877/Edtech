@@ -426,7 +426,9 @@ footer{
 
  /* General Mobile Styles */
 @media (max-width: 768px) {
-
+  .navbar-main {
+    display: flex;
+  }
   /* Footer Main */
   .footer-main {
     padding: 6% 4%;
