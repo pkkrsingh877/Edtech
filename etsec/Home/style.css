@@ -286,10 +286,13 @@ body {
 
 footer{
 	background-color: #181D38;
- 
+}
+
+.footer-container {
+  margin-top: 1rem;
 }
 .footer-main{
-  padding:4% 7%
+  padding:4% 7%;
 }
 
 .quick-section ul{
@@ -957,6 +960,9 @@ footer{
   }
 }
 
+textarea {
+  resize: none;
+}
 
 
 
