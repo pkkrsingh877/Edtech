@@ -964,6 +964,24 @@ textarea {
   resize: none!important;
 }
 
+/* Custom button */
+.custom-button {
+  background-color: white;
+  color: #06BBCC;
+  border: 1px solid #06BBCC;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none; /* Remove underline from the link */
+  display: inline-block; /* Make the link behave like a block element */
+  margin-top: 10px; /* Add some space above the button */
+  font-size: 16px;
+}
+
+.custom-button:hover{
+    background-color: #06BBCC;
+    border: 1px solid white;
+    color: white;
+}
 
 
 
