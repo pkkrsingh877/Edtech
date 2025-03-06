@@ -984,7 +984,34 @@ textarea {
     color: white;
 }
 
+.feature-list .list-group-item {
+  background-color: transparent;
+  border: none;
+  padding: 0.75rem 0;
+  display: flex;
+  align-items: center;
+}
 
+.feature-list .list-group-item i {
+  margin-right: 1rem;
+  color: #06BBCC; /* Primary color for icons */
+  font-size: 1.2rem;
+  min-width: 25px; 
+}
+.feature-list .list-group-item span{
+ font-weight: 500;
+}
+.feature-section {
+padding: 2rem 0;
+}
 
+/* Color */
 
+.bg-color-primary {
+  background-color: #06BBCC;
+  color: white;
+}
 
+.color-primary {
+  color: #06BBCC;
+}
