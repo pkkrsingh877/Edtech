@@ -1,21 +1,29 @@
 const toggleBtn = document.querySelector('[data-toggle="slidder"]');
 const slidder = document.querySelector(".slidder");
 
-toggleBtn.addEventListener("mouseover", () => {
-  slidder.classList.add("active");
-});
+let timeout; // Store timeout reference
 
-toggleBtn.addEventListener("mouseleave", () => {
-  setTimeout(() => {
-    if (!slidder.matches(":hover")) {
+const activateSlidder = () => {
+  clearTimeout(timeout); // Prevent it from closing while hovering
+  slidder.classList.add("active");
+};
+
+const deactivateSlidder = () => {
+  timeout = setTimeout(() => {
+    if (!toggleBtn.matches(":hover") && !slidder.matches(":hover")) {
       slidder.classList.remove("active");
     }
   }, 100);
-});
+};
 
-slidder.addEventListener("mouseleave", () => {
-  slidder.classList.remove("active");
-});
+// Show slider when mouse enters toggle button or slider
+toggleBtn.addEventListener("mouseenter", activateSlidder);
+slidder.addEventListener("mouseenter", activateSlidder);
+
+// Hide slider only if mouse leaves both toggle button and slider
+toggleBtn.addEventListener("mouseleave", deactivateSlidder);
+slidder.addEventListener("mouseleave", deactivateSlidder);
+
 
 const images = document.querySelectorAll(".img-fluid");
 // console.log(images);
