@@ -974,3 +974,195 @@ padding: 2rem 0;
 .color-primary {
   color: #06BBCC;
 }
+
+/* Syllabus */
+
+/* Style for the course title */
+.course-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #06BBCC;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.course-title span {
+    padding: 0 1rem;
+}
+.line-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.align-right {
+    flex-direction: row;
+}
+.align-left {
+    flex-direction: row-reverse;
+}
+
+.longline {
+    height: 2px;
+    background-color: #06BBCC;
+    width: 100px;
+}
+.shortline {
+    height: 2px;
+    background-color: #06BBCC;
+    width: 30px;
+}
+.beforeshortline{
+    height: 2px;
+    background-color: #06BBCC;
+    width: 30px;
+}
+
+/* Style for the feature section */
+.feature-section {
+  padding: 2rem 0;
+}
+
+.feature-section .row {
+    margin: 2rem 0rem;
+}
+
+.feature-section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list .list-group-item {
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.feature-list .list-group-item i {
+  color: #06BBCC;
+  font-size: 1.5rem;
+  min-width: 2rem;
+  text-align: center;
+}
+
+.feature-list .list-group-item span {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.feature-list .list-group-item strong {
+  font-weight: 600;
+}
+
+
+/* Style for the course section in details page */
+.course-section {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+.course-section .container{
+    padding: 1.5rem;
+}
+
+.course-section h2 {
+    color: #06BBCC;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.course-section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.course-content {
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-content .section-header {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #06BBCC;
+    padding-bottom: 0.5rem;
+}
+
+.course-list {
+    list-style: none;
+    padding: 0;
+}
+
+.course-list li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 25px;
+    font-size: 1rem;
+}
+
+.course-list li::before {
+    content: "\f058"; 
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #06BBCC;
+    font-size: 1rem;
+}
+
+.course-list ul {
+    margin-top: 0.5rem;
+    padding-left: 2rem;
+    list-style-type: none;
+}
+.course-list ul li{
+    margin-bottom: .5rem;
+}
+.course-list ul li::before{
+    content: "\f111";
+    font-size: .5rem;
+    color: #6c757d;
+}
+
+.course-section hr {
+  color: #06BBCC;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .course-title {
+        font-size: 2rem;
+    }
+    .course-title .longline{
+        width: 50px;
+    }
+    .feature-list .list-group-item{
+        flex-direction: column;
+    }
+    .course-section h2{
+        font-size: 1.5rem;
+    }
+}
